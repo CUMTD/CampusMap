@@ -1,0 +1,15 @@
+.container {
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "picker map";
+	grid-gap: 1rem;
+	min-height: 100vh;
+
+	.picker {
+		grid-area: picker;
+	}
+	svg {
+		grid-area: map;
+	}
+}
