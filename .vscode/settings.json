@@ -1,8 +1,4 @@
 {
-	"cSpell.words": [
-		"Ikenberry",
-		"Illini"
-	],
 	"files.exclude": {
 		"**/.git": true,
 		"**/.svn": true,

@@ -7,5 +7,11 @@
 			"path": "src"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"cSpell.words": [
+			"Ikenberry",
+			"Illini",
+			"Foellinger"
+		]
+	}
 }
