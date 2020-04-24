@@ -1,14 +1,17 @@
 {
-    "cSpell.words": [
-        "Ikenberry",
-        "Illini"
-    ],
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "node_modules": true
-    }
+	"cSpell.words": [
+		"Ikenberry",
+		"Illini"
+	],
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"node_modules": true,
+		"**/*.code-workspace": true,
+		"**/react-app-env.d.ts": true,
+		"**/yarn.lock": true
+	}
 }

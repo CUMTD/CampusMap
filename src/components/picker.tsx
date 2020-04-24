@@ -47,7 +47,7 @@ const Picker: FC = () => {
 					.state
 					.transferPoints
 					.sort((a, b) => a.number - b.number)
-					.map(tp => <TP key={tp.id} {...tp} />)}
+					.map(tp => <TP key={tp.number} {...tp} />)}
 			</ul>
 			<ClearButton />
 		</div>
