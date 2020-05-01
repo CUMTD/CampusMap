@@ -5,11 +5,11 @@ import { AppContext } from '../app';
 function getColor(categoryType: PointOfInterestType | undefined): string {
 	switch (categoryType) {
 		case 'Academic Building':
-			return '#f32735';
+			return '#E72B6B';
 		case 'Housing':
-			return '#f32735';
+			return '#E72B6B';
 		case 'Transfer Point':
-			return '#0f0';
+			return '#E72B6B';
 		default:
 			console.warn('No category open');
 	}
@@ -26,6 +26,9 @@ const Poi: FC = () => {
 				fill={color}
 				cx={context.state.selectedPointOfInterest.x}
 				cy={context.state.selectedPointOfInterest.y}
+				stroke={color}
+				strokeWidth={1}
+				fillOpacity={0.7}
 				r="4"
 			/>
 		);
