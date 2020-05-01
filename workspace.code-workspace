@@ -8,6 +8,12 @@
 		},
 		{
 			"path": "src\\components\\map"
+		},
+		{
+			"path": "src\\components\\picker"
+		},
+		{
+			"path": "src\\scss"
 		}
 	],
 	"settings": {

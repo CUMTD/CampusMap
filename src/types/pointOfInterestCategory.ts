@@ -4,4 +4,5 @@ import { PointOfInterestType } from "./pointOfInterestType";
 export interface PointOfInterestCategory {
 	name: PointOfInterestType;
 	pointsOfInterest: PointOfInterest[];
+	icon: string;
 }

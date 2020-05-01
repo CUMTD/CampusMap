@@ -1,59 +1,105 @@
 @import "./colors";
 
+$picker-width: 20rem;
+
 .picker {
-	min-width: 20rem;
+	width: $picker-width;
 	background: $black;
 	color: $white;
 	display: flex;
 	flex-flow: column nowrap;
 	height: 100%;
 
+	button {
+		background: none;
+		border: none;
+		color: inherit;
+		font-family: interstate, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-size: 1.5rem;
+		text-align: left;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+
+		i {
+			font-size: 2rem;
+			margin-right: 0.25rem;
+		}
+	}
+
 	ul {
 		list-style: none;
-		margin: 0;
-		padding: 0.5rem 1rem 0 1rem;
-		flex: 1 1 auto;
-
-		button {
-			background: none;
-			border: none;
-			display: block;
-			color: $white;
-			padding: 0.5rem 1rem;
-			width: 100%;
-			text-align: left;
-			font-size: 1.25rem;
-			font-family: interstate, sans-serif;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			&:hover {
-				&,
-				strong {
-					color: $red !important;
-					transition: 0.5s ease-in-out;
-				}
-			}
-
-			&.open {
-				color: $red;
-			}
+		padding: 0 1rem;
+		li {
+			margin-bottom: 0.25rem;
 		}
+	}
 
-		.category + .category {
-			border-top: 1px solid rgba($white, 0.2);
-		}
+	.points-of-interest {
+		$width: $picker-width - 1rem;
+		$bg: $blue;
+		width: $width;
+		background: $bg;
 
-		.pois {
-			padding-left: 1rem;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: -$width;
+		transition: left 0.2s ease-out;
+		display: flex;
+		flex-flow: column nowrap;
+
+		.title {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+			padding: 0 1rem;
+			margin: 1rem 0;
 
 			button {
-				font-size: 1rem;
-			}
-
-			.selected {
+				background: $white;
+				border: none;
 				color: $blue;
+				margin: 0 0.25rem 0 0;
+				padding: 0.125rem;
+				border-radius: 50%;
+				display: flex;
+				flex-flow: row nowrap;
+				align-items: center;
+				justify-content: center;
+				width: 2.25rem;
+				height: 2.25rem;
+				i {
+					font-size: 2rem;
+					margin: 0;
+				}
+			}
+			h2 {
+				margin: 0;
+				font-weight: normal;
+				font-size: 1.5rem;
 			}
 		}
+
+		&.open {
+			left: 0;
+			box-shadow: 2px 0 8px rgba($white, 0.15);
+			transition: left 0.2s ease-in;
+		}
+
+		button {
+			font-size: 1.25rem;
+			.material-icons {
+				font-size: 1em;
+				align-self: flex-start;
+			}
+		}
+	}
+
+	.points-of-interest-list {
+		flex: 1 1 auto;
+		margin: 0;
 	}
 }

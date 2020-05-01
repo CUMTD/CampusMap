@@ -15,6 +15,7 @@ const PointOfInterest: FC<POI> = (props: POI) => {
 	}
 
 	return <button disabled={selected} className={selected ? 'selected' : 'unselected'} onClick={onClick}>
+		<i className="material-icons">{selected ? 'check_box' : 'check_box_outline_blank'}</i>
 		{props.name}
 	</button>
 };

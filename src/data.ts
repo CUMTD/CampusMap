@@ -39,6 +39,7 @@ export const Routes: Route[] = [
 export const PointsOfInterest: PointOfInterestCategory[] = [
 	{
 		name: 'Housing',
+		icon: 'house',
 		pointsOfInterest: [
 			{
 				name: 'Allen Hall',
@@ -93,6 +94,7 @@ export const PointsOfInterest: PointOfInterestCategory[] = [
 	},
 	{
 		name: 'Academic Building',
+		icon: 'school',
 		pointsOfInterest: [
 			{
 				name: 'Foellinger',

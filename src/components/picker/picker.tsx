@@ -2,13 +2,13 @@ import React, { FC, useContext } from 'react';
 import '../../scss/picker.scss';
 import { AppContext } from '../app';
 import Category from './category';
-import ClearButton from './clearButton';
+import PointsOfInterest from './pointsOfInterest';
 
 const Picker: FC = () => {
 	const context = useContext(AppContext);
 
 	return <div className="picker">
-		<ul>
+		<ul className="category-list">
 			{
 				context
 					.state
@@ -16,7 +16,7 @@ const Picker: FC = () => {
 					.map(c => <li className="category" key={c.name}><Category {...c} /></li>)
 			}
 		</ul>
-		<ClearButton key="clear" />
+		<PointsOfInterest />
 	</div>
 }
 
