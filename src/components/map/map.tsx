@@ -8,7 +8,7 @@ import TransferPoints from './transferPoints';
 const Map: FC = () => {
 	return (
 		<div className="map">
-			<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linecap="round" stroke-miterlimit="1.5" clip-rule="evenodd" viewBox="0 0 700 625">
+			<svg xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" strokeLinecap="round" strokeMiterlimit="1.5" clipRule="evenodd" viewBox="0 0 700 625">
 				<Landmarks />
 				<Routes />
 				<TransferPoints />

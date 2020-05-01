@@ -1,25 +1,22 @@
-import React, { CSSProperties, FC, ReactElement, useContext } from 'react';
-import { AppContext } from '../app';
+import React, { CSSProperties, FC, ReactElement } from 'react';
 
 interface Props {
 	number: number;
 	color: string;
 	offColor: string;
 	children: ReactElement;
+	active: boolean;
 }
 
 const Route: FC<Props> = (props: Props) => {
-	const context = useContext(AppContext);
-	const active = !context.state.selectedPointOfInterest ||
-		(context.state.selectedPointOfInterest && context.state.selectedPointOfInterest.routeNumbers.filter(r => r === props.number).length > 0)
-
 	const style: CSSProperties = {
-		stroke: active ? props.color : props.offColor,
+		stroke: props.active ? props.color : props.offColor,
 		strokeMiterlimit: 10,
 		fill: 'none',
 		strokeWidth: 5,
 		strokeLinejoin: 'round',
-		strokeLinecap: 'round'
+		strokeLinecap: 'round',
+		zIndex: (props.active ? 100 : 10) + props.number
 	};
 
 	return React.cloneElement(props.children, { style });

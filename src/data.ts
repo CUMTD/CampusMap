@@ -97,6 +97,12 @@ export const PointsOfInterest: PointOfInterestCategory[] = [
 		icon: 'school',
 		pointsOfInterest: [
 			{
+				name: 'Activities and Recreation Center (ARC)',
+				x: 145,
+				y: 352,
+				routeNumbers: [22]
+			},
+			{
 				name: 'Foellinger',
 				x: 320,
 				y: 267,
@@ -113,6 +119,42 @@ export const PointsOfInterest: PointOfInterestCategory[] = [
 				x: 233,
 				y: 271,
 				routeNumbers: [1, 13, 21, 22]
+			},
+			{
+				name: 'Bevier Hall',
+				x: 358,
+				y: 270,
+				routeNumbers: [10, 12, 13, 21, 22]
+			},
+			{
+				name: 'Business Instructional Facility (BIF)',
+				x: 242,
+				y: 303,
+				routeNumbers: [1, 10, 13, 21, 22]
+			},
+			{
+				name: 'Campus Recreation Center East (CRCE)',
+				x: 414,
+				y: 268,
+				routeNumbers: [10, 12, 13, 21, 22]
+			},
+			{
+				name: 'Ceramics Building',
+				x: 358,
+				y: 101,
+				routeNumbers: [10, 13, 22]
+			},
+			{
+				name: 'Chemical and Life Sciences',
+				x: 358,
+				y: 192,
+				routeNumbers: [2, 10, 12, 21, 22]
+			},
+			{
+				name: 'David Kinley Hall (DKH)',
+				x: 300,
+				y: 302,
+				routeNumbers: [10, 13, 22]
 			}
 		]
 	}
