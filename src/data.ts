@@ -1,3 +1,4 @@
+import { PointOfInterestCategory } from "./types/pointOfInterestCategory";
 import { Route } from "./types/route";
 import { TransferPoint } from "./types/transferPoint";
 
@@ -75,4 +76,47 @@ export const Routes: Route[] = [
 		name: 'Illini',
 		transferPointIds: [1, 2, 3]
 	},
+];
+
+export const PointsOfInterest: PointOfInterestCategory[] = [
+	{
+		name: 'Housing',
+		pointsOfInterest: [
+			{
+				name: 'Allen Hall',
+				x: 6050,
+				y: 5600,
+				routeNumbers: [10, 12, 13, 22]
+			},
+			{
+				name: 'ISR',
+				x: 6150,
+				y: 4350,
+				routeNumbers: [22]
+			}
+		]
+	},
+	{
+		name: 'Academic Building',
+		pointsOfInterest: [
+			{
+				name: 'Foellinger',
+				x: 4950,
+				y: 5400,
+				routeNumbers: [10, 13, 22]
+			},
+			{
+				name: 'Altgeld',
+				x: 4400,
+				y: 3900,
+				routeNumbers: [1, 5, 12, 13, 22]
+			},
+			{
+				name: 'Armory',
+				x: 3500,
+				y: 5550,
+				routeNumbers: [1, 13, 22]
+			}
+		]
+	}
 ];

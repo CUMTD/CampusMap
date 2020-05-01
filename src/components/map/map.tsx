@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import '../../scss/map.scss';
+import Poi from './poi';
 import Quads from './quads';
 import Routes from './routes';
 import TransferPoints from './transferPoints';
@@ -11,6 +12,7 @@ const Map: FC = () => {
 				<Quads />
 				<Routes />
 				<TransferPoints />
+				<Poi />
 			</svg>
 		</div>
 	);

@@ -1,25 +1,22 @@
-import React, { FC } from 'react';
+import React, { CSSProperties, FC } from 'react';
 
 const Quads: FC = () => {
-	const textStyle = {
-		fontFamily: 'Interstate',
-		fontWeight: 300,
-		fontSize: '266.667px',
-		fill: '#222'
+
+	const groupStyle: CSSProperties = {
+		fill: 'none',
+		stroke: '#000',
+		strokeWidth: 42,
+		opacity: 0.1,
+		strokeLinejoin: 'round'
 	};
-	const pathStyle = {
-		fill: '#e3e8e5',
-		stroke: '#666',
-		strokeWidth: '33.33px'
-	};
+
 	return (
-		<g>
-			<path style={pathStyle} d="M5500 4010c0-60.71-49.29-110-110-110h-880c-60.71 0-110 49.29-110 110v1370c0 60.71 49.29 110 110 110h880c60.71 0 110-49.29 110-110V4010z" />
-			<text style={textStyle} x="4599.97" y="2985.62" transform="matrix(1.10753 0 0 1.07334 -491.467 1442.47)">Main</text>
-			<text style={textStyle} x="4599.97" y="3252.29" transform="matrix(1.10753 0 0 1.07334 -491.467 1442.47)">Quad</text>
-			<path style={pathStyle} fill="#e3e8e5" stroke="#222" stroke-width="33.33" d="M5500 2725c0-124.18-100.82-225-225-225h-650c-124.18 0-225 100.82-225 225v450c0 124.18 100.82 225 225 225h650c124.18 0 225-100.82 225-225v-450z" />
-			<text style={textStyle} x="4599.97" y="2985.62" transform="translate(4.429 -79.89)">North</text>
-			<text style={textStyle} x="4599.97" y="3252.29" transform="translate(4.429 -79.89)">Quad</text>
+		<g style={groupStyle}>
+			<path d="M4600 4400h700M4600 4800h700M5300 4000l-700 400M4600 4000l700 400M4600 4400l700 400M4600 4800l700-400M4600 4800l700 500M5300 4800l-700 500M4800 4000v100M4600 4000h700v1300h-700z" />
+			<path d="M5000 2700v200" />
+			<path strokeLinecap="butt" d="M4500 3400c333.33-122.41 666.67-123.77 1000 0l-900-349.87M5400 3050.13L4500 3400" />
+			<path d="M5500 2800v66.18c0 21.28-9.57 41.44-26.06 54.9-48.34 38.78-73.45 60.66-73.94 129.05M5500 2800h-137.87c-39.78 0-77.93 15.8-106.06 43.93l-12.14 12.14a149.988 149.988 0 01-106.06 43.93h-275.74c-39.78 0-77.93-15.8-106.06-43.93l-12.14-12.14a149.988 149.988 0 00-106.06-43.93H4500" />
+			<path d="M4500 3400c0-200 100-500 500-500s500 300 500 500" />
 		</g>
 	);
 };

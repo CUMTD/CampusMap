@@ -1,4 +1,6 @@
 import * as data from './data';
+import { PointOfInterest } from './types/pointOfInterest';
+import { PointOfInterestCategory } from './types/pointOfInterestCategory';
 import { Route } from './types/route';
 import { TransferPoint } from './types/transferPoint';
 
@@ -17,8 +19,13 @@ function filterTransferPoints(active: TransferPoint | null, routes: Route[], tra
 }
 
 interface DefaultableState {
-	transferPoints: TransferPoint[];
+	pointOfInterestCategories: PointOfInterestCategory[];
+	selectedPointOfInterestCategory: PointOfInterestCategory | null;
+	selectedPointOfInterest: PointOfInterest | null;
+
 	routes: Route[];
+
+	transferPoints: TransferPoint[];
 	selectedTransferPoint: TransferPoint | null;
 	activeTransferPointIds: number[];
 }
@@ -26,7 +33,10 @@ interface DefaultableState {
 export type State = Readonly<DefaultableState>;
 
 export enum Actions {
-	SelectTransferPoint
+	SelectTransferPoint,
+	SelectPointOfInterestCategory,
+	SelectPointOfInterest,
+	Clear
 }
 
 interface BaseAction<T extends Actions> {
@@ -37,7 +47,18 @@ interface SetCurrentTransferPoint extends BaseAction<Actions.SelectTransferPoint
 	selectedTransferPoint: TransferPoint | null;
 }
 
-export type Action = SetCurrentTransferPoint;
+interface SelectPointOfInterestCategory extends BaseAction<Actions.SelectPointOfInterestCategory> {
+	category: PointOfInterestCategory | null;
+}
+
+interface SelectPointOfInterest extends BaseAction<Actions.SelectPointOfInterest> {
+	poi: PointOfInterest | null;
+}
+
+interface Clear extends BaseAction<Actions.Clear> {
+}
+
+export type Action = SetCurrentTransferPoint | SelectPointOfInterestCategory | SelectPointOfInterest | Clear;
 
 export function reducer(state: State, action: Action): State {
 	switch (action.type) {
@@ -47,14 +68,43 @@ export function reducer(state: State, action: Action): State {
 				selectedTransferPoint: action.selectedTransferPoint,
 				activeTransferPointIds: filterTransferPoints(action.selectedTransferPoint, state.routes, state.transferPoints)
 			};
+		case Actions.SelectPointOfInterestCategory:
+			return {
+				...state,
+				selectedPointOfInterestCategory: action.category,
+				selectedPointOfInterest: null
+			};
+		case Actions.SelectPointOfInterest:
+			const category = action.poi ?
+				state.pointOfInterestCategories.filter(c => c.pointsOfInterest.filter(poi => poi.name === action.poi?.name).length > 0)[0]
+				: state.selectedPointOfInterestCategory;
+
+			return {
+				...state,
+				selectedPointOfInterest: action.poi,
+				selectedPointOfInterestCategory: category,
+				selectedTransferPoint: null
+			};
+		case Actions.Clear:
+			return {
+				...state,
+				selectedPointOfInterest: null,
+				selectedPointOfInterestCategory: null,
+				selectedTransferPoint: null
+			}
 		default:
 			return state;
 	}
 }
 
 export const StateDefaults: DefaultableState = ({
-	transferPoints: data.TransferPoints,
+	pointOfInterestCategories: data.PointsOfInterest,
+	selectedPointOfInterestCategory: null,
+	selectedPointOfInterest: null,
+
 	routes: data.Routes,
+
+	transferPoints: data.TransferPoints,
 	selectedTransferPoint: null,
 	activeTransferPointIds: filterTransferPoints(null, data.Routes, data.TransferPoints)
 });
