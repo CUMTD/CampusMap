@@ -31,9 +31,9 @@ $picker-width: 20rem;
 
 	ul {
 		list-style: none;
-		padding: 0 1rem;
+		padding: 1rem 1rem;
 		li {
-			margin-bottom: 0.25rem;
+			margin-bottom: 1rem;
 		}
 	}
 
@@ -62,7 +62,7 @@ $picker-width: 20rem;
 				background: $white;
 				border: none;
 				color: $blue;
-				margin: 0 0.25rem 0 0;
+				margin: 0 0.5rem 0 0;
 				padding: 0.125rem;
 				border-radius: 50%;
 				display: flex;
@@ -78,7 +78,6 @@ $picker-width: 20rem;
 			}
 			h2 {
 				margin: 0;
-				font-weight: normal;
 				font-size: 1.5rem;
 			}
 		}
