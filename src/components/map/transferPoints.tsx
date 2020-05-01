@@ -3,11 +3,11 @@ import TransferPoint from './transferPoint';
 
 const TransferPoints: FC = () => (
 	<g>
-		<TransferPoint x={670} y={92.75} name="Downtown Urbana" />
-		<TransferPoint x={40} y={40} name="Downtown Champaign" />
-		<TransferPoint x={87.75} y={476.25} name="E-14" />
-		<TransferPoint x={85} y={569} name="Research Park" />
-		<TransferPoint x={425} y={395} name="FAR/PAR" />
+		<TransferPoint x={690} y={122.75} name="Downtown Urbana" />
+		<TransferPoint x={60} y={70} name="Downtown Champaign" />
+		<TransferPoint x={107.5} y={506.25} name="E-14" />
+		<TransferPoint x={105} y={599} name="Research Park" />
+		<TransferPoint x={445} y={425} name="FAR/PAR" />
 	</g>
 );
 

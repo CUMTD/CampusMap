@@ -1,4 +1,4 @@
-import React, { CSSProperties, FC, ReactElement } from 'react';
+import React, { CSSProperties, FC, Fragment, ReactElement } from 'react';
 
 interface Props {
 	number: number;
@@ -6,11 +6,13 @@ interface Props {
 	offColor: string;
 	children: ReactElement;
 	active: boolean;
+	arrows?: JSX.Element[];
 }
 
 const Route: FC<Props> = (props: Props) => {
+	const color = props.active ? props.color : props.offColor;
 	const style: CSSProperties = {
-		stroke: props.active ? props.color : props.offColor,
+		stroke: color,
 		strokeMiterlimit: 10,
 		fill: 'none',
 		strokeWidth: 5,
@@ -19,7 +21,17 @@ const Route: FC<Props> = (props: Props) => {
 		zIndex: (props.active ? 100 : 10) + props.number
 	};
 
-	return React.cloneElement(props.children, { style });
+	const arrowStyle: CSSProperties = {
+		...style,
+		fill: color
+	};
+
+	return (
+		<Fragment>
+			{React.cloneElement(props.children, { style, key: 'line' })}
+			{props.arrows?.map((a, i) => React.cloneElement(a, { style: arrowStyle, key: i }))}
+		</Fragment>
+	);
 }
 
 export default Route;

@@ -98,62 +98,62 @@ export const PointsOfInterest: PointOfInterestCategory[] = [
 		pointsOfInterest: [
 			{
 				name: 'Activities and Recreation Center (ARC)',
-				x: 145,
-				y: 352,
+				x: 165,
+				y: 382,
 				routeNumbers: [22]
 			},
 			{
 				name: 'Foellinger',
-				x: 320,
-				y: 267,
+				x: 340,
+				y: 297,
 				routeNumbers: [10, 13, 22]
 			},
 			{
 				name: 'Altgeld',
-				x: 298,
-				y: 160,
+				x: 318,
+				y: 190,
 				routeNumbers: [1, 2, 5, 12, 13, 21, 22]
 			},
 			{
 				name: 'Armory',
-				x: 233,
-				y: 271,
+				x: 253,
+				y: 301,
 				routeNumbers: [1, 13, 21, 22]
 			},
 			{
 				name: 'Bevier Hall',
-				x: 358,
-				y: 270,
+				x: 378,
+				y: 300,
 				routeNumbers: [10, 12, 13, 21, 22]
 			},
 			{
 				name: 'Business Instructional Facility (BIF)',
-				x: 242,
-				y: 303,
+				x: 262,
+				y: 333,
 				routeNumbers: [1, 10, 13, 21, 22]
 			},
 			{
 				name: 'Campus Recreation Center East (CRCE)',
-				x: 414,
-				y: 268,
+				x: 434,
+				y: 298,
 				routeNumbers: [10, 12, 13, 21, 22]
 			},
 			{
 				name: 'Ceramics Building',
-				x: 358,
-				y: 101,
+				x: 378,
+				y: 131,
 				routeNumbers: [10, 13, 22]
 			},
 			{
 				name: 'Chemical and Life Sciences',
-				x: 358,
-				y: 192,
+				x: 378,
+				y: 222,
 				routeNumbers: [2, 10, 12, 21, 22]
 			},
 			{
 				name: 'David Kinley Hall (DKH)',
-				x: 300,
-				y: 302,
+				x: 320,
+				y: 332,
 				routeNumbers: [10, 13, 22]
 			}
 		]

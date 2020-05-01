@@ -1,15 +1,27 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 .container {
 	display: grid;
 	grid-template-columns: min-content 1fr;
 	grid-template-rows: 1fr;
 	grid-template-areas: "picker map";
-	grid-gap: 1rem;
+	grid-gap: 0;
 	min-height: 100vh;
+	max-width: calc(100vw - 4rem);
 
 	.picker {
 		grid-area: picker;
 	}
 	svg {
 		grid-area: map;
+		padding: 2rem;
 	}
 }
