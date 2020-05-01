@@ -5,7 +5,7 @@ import { AppContext } from '../app';
 
 const ClearButton: FC = () => {
 	const context = useContext(AppContext);
-	const show = context.state.selectedTransferPoint !== null || context.state.selectedPointOfInterestCategory !== null || context.state.selectedPointOfInterest !== null;
+	const show = context.state.selectedPointOfInterestCategory !== null || context.state.selectedPointOfInterest !== null;
 	const style: CSSProperties = {
 		opacity: show ? 1 : 0
 	};

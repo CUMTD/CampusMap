@@ -1,15 +1,15 @@
 import React, { FC } from 'react';
 import '../../scss/map.scss';
+import Landmarks from './landmarks';
 import Poi from './poi';
-import Quads from './quads';
 import Routes from './routes';
 import TransferPoints from './transferPoints';
 
 const Map: FC = () => {
 	return (
 		<div className="map">
-			<svg xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="1.5" clipRule="evenodd" viewBox="0 0 10000 10000">
-				<Quads />
+			<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linecap="round" stroke-miterlimit="1.5" clip-rule="evenodd" viewBox="0 0 700 625">
+				<Landmarks />
 				<Routes />
 				<TransferPoints />
 				<Poi />
