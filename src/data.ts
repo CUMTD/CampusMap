@@ -1,80 +1,38 @@
 import { PointOfInterestCategory } from "./types/pointOfInterestCategory";
 import { Route } from "./types/route";
-import { TransferPoint } from "./types/transferPoint";
-
-export const TransferPoints: TransferPoint[] = [
-	{
-		number: 1,
-		name: 'Illini Union',
-		routeIds: [5, 12, 13, 22]
-	},
-	{
-		number: 2,
-		name: 'Main Library',
-		routeIds: [10, 13, 22]
-	},
-	{
-		number: 3,
-		name: 'FAR/PAR',
-		routeIds: [12, 13, 22]
-	},
-	{
-		number: 4,
-		name: 'Downtown Champaign',
-		routeIds: [1, 5, 12]
-	},
-	{
-		number: 5,
-		name: 'Ikenberry Commons',
-		routeIds: [1, 10]
-	},
-	{
-		number: 6,
-		name: 'Research Park',
-		routeIds: [1]
-	},
-	{
-		number: 7,
-		name: 'Orchard Downs',
-		routeIds: [12]
-	},
-	{
-		number: 9,
-		name: 'E-14',
-		routeIds: [1, 10]
-	}
-];
 
 export const Routes: Route[] = [
 	{
 		number: 1,
-		name: 'Yellow',
-		transferPointIds: [4, 5, 6, 9]
+		name: 'Yellow'
+	},
+	{
+		number: 2,
+		name: 'Red'
 	},
 	{
 		number: 5,
-		name: 'Green',
-		transferPointIds: [1, 4, 8]
+		name: 'Green'
 	},
 	{
 		number: 10,
-		name: 'Gold',
-		transferPointIds: [2, 5, 8, 9]
+		name: 'Gold'
 	},
 	{
 		number: 12,
-		name: 'Teal',
-		transferPointIds: [1, 3, 4, 7]
+		name: 'Teal'
 	},
 	{
 		number: 13,
-		name: 'Silver',
-		transferPointIds: [2, 3, 8]
+		name: 'Silver'
+	},
+	{
+		number: 21,
+		name: 'Raven'
 	},
 	{
 		number: 22,
-		name: 'Illini',
-		transferPointIds: [1, 2, 3]
+		name: 'Illini'
 	},
 ];
 
@@ -84,16 +42,53 @@ export const PointsOfInterest: PointOfInterestCategory[] = [
 		pointsOfInterest: [
 			{
 				name: 'Allen Hall',
-				x: 6050,
-				y: 5600,
-				routeNumbers: [10, 12, 13, 22]
+				x: 435,
+				y: 281,
+				routeNumbers: [2, 10, 12, 13, 21, 22]
 			},
 			{
-				name: 'ISR',
-				x: 6150,
-				y: 4350,
-				routeNumbers: [22]
+				name: 'Busey Evans Hall',
+				x: 390,
+				y: 245,
+				routeNumbers: [2, 10, 12, 21, 22]
+			},
+			{
+				name: 'Florida Avenue Residence Hall (FAR)',
+				x: 428,
+				y: 405,
+				routeNumbers: [12, 13, 21, 22]
+			},
+			{
+				name: 'Ikenberry Commons',
+				x: 145,
+				y: 313,
+				routeNumbers: [1, 10, 22]
+			},
+			{
+				name: 'Illinois Street Residence Hall (ISR)',
+				x: 420,
+				y: 157,
+				routeNumbers: [5, 22]
+			},
+			{
+				name: 'Lincoln Avenue Residence Hall (LAR)',
+				x: 448,
+				y: 281,
+				routeNumbers: [2, 10, 12, 13, 21, 22]
+			},
+			{
+				name: 'Orchard Downs',
+				x: 545,
+				y: 452.5,
+				routeNumbers: [12]
+			},
+			{
+				name: 'Pennsylvania Avenue Residence Hall (PAR)',
+				x: 436,
+				y: 386,
+				routeNumbers: [2, 10, 12, 13, 21, 22]
 			}
+
 		]
 	},
 	{
@@ -101,21 +96,21 @@ export const PointsOfInterest: PointOfInterestCategory[] = [
 		pointsOfInterest: [
 			{
 				name: 'Foellinger',
-				x: 4950,
-				y: 5400,
+				x: 320,
+				y: 267,
 				routeNumbers: [10, 13, 22]
 			},
 			{
 				name: 'Altgeld',
-				x: 4400,
-				y: 3900,
-				routeNumbers: [1, 5, 12, 13, 22]
+				x: 298,
+				y: 160,
+				routeNumbers: [1, 2, 5, 12, 13, 21, 22]
 			},
 			{
 				name: 'Armory',
-				x: 3500,
-				y: 5550,
-				routeNumbers: [1, 13, 22]
+				x: 233,
+				y: 271,
+				routeNumbers: [1, 13, 21, 22]
 			}
 		]
 	}

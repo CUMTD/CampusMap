@@ -26,7 +26,7 @@ const Poi: FC = () => {
 				fill={color}
 				cx={context.state.selectedPointOfInterest.x}
 				cy={context.state.selectedPointOfInterest.y}
-				r="50"
+				r="4"
 			/>
 		);
 	}
