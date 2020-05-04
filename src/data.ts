@@ -43,50 +43,50 @@ export const PointsOfInterest: PointOfInterestCategory[] = [
 		pointsOfInterest: [
 			{
 				name: 'Allen Hall',
-				x: 440,
+				x: 435,
 				y: 311,
 				routeNumbers: [2, 10, 12, 13, 21, 22]
 			},
 			{
 				name: 'Busey Evans Hall',
-				x: 380,
+				x: 390,
 				y: 275,
 				routeNumbers: [2, 10, 12, 21, 22]
 			},
 			{
 				name: 'Florida Avenue Residence Hall (FAR)',
-				x: 442,
-				y: 440,
+				x: 428,
+				y: 435,
 				routeNumbers: [12, 13, 21, 22]
 			},
 			{
 				name: 'Ikenberry Commons',
-				x: 168,
-				y: 350,
+				x: 145,
+				y: 343,
 				routeNumbers: [1, 10, 22]
 			},
 			{
 				name: 'Illinois Street Residence Hall (ISR)',
-				x: 430,
-				y: 190,
+				x: 420,
+				y: 187,
 				routeNumbers: [5, 22]
 			},
 			{
 				name: 'Lincoln Avenue Residence Hall (LAR)',
-				x: 455,
+				x: 448,
 				y: 311,
 				routeNumbers: [2, 10, 12, 13, 21, 22]
 			},
 			{
 				name: 'Orchard Downs',
-				x: 564.5,
-				y: 483,
+				x: 545,
+				y: 482.5,
 				routeNumbers: [12]
 			},
 			{
 				name: 'Pennsylvania Avenue Residence Hall (PAR)',
-				x: 448,
-				y: 415,
+				x: 436,
+				y: 416,
 				routeNumbers: [2, 10, 12, 13, 21, 22]
 			}
 
@@ -99,7 +99,7 @@ export const PointsOfInterest: PointOfInterestCategory[] = [
 			{
 				name: 'Activities and Recreation Center (ARC)',
 				x: 165,
-				y: 385,
+				y: 382,
 				routeNumbers: [22]
 			},
 			{
