@@ -49,26 +49,26 @@ export const PointsOfInterest: PointOfInterestCategory[] = [
 			},
 			{
 				name: 'Busey Evans Hall',
-				x: 390,
-				y: 275,
+				x: 410,
+				y: 280,
 				routeNumbers: [2, 10, 12, 21, 22]
 			},
 			{
 				name: 'Florida Avenue Residence Hall (FAR)',
-				x: 428,
-				y: 435,
+				x: 435,
+				y: 440,
 				routeNumbers: [12, 13, 21, 22]
 			},
 			{
 				name: 'Ikenberry Commons',
-				x: 145,
-				y: 343,
+				x: 165,
+				y: 350,
 				routeNumbers: [1, 10, 22]
 			},
 			{
 				name: 'Illinois Street Residence Hall (ISR)',
-				x: 420,
-				y: 187,
+				x: 435,
+				y: 190,
 				routeNumbers: [5, 22]
 			},
 			{
@@ -79,14 +79,14 @@ export const PointsOfInterest: PointOfInterestCategory[] = [
 			},
 			{
 				name: 'Orchard Downs',
-				x: 545,
+				x: 564,
 				y: 482.5,
 				routeNumbers: [12]
 			},
 			{
 				name: 'Pennsylvania Avenue Residence Hall (PAR)',
-				x: 436,
-				y: 416,
+				x: 450,
+				y: 415,
 				routeNumbers: [2, 10, 12, 13, 21, 22]
 			}
 

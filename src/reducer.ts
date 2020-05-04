@@ -58,7 +58,7 @@ export function reducer(state: State, action: Action): State {
 				...state,
 				selectedPointOfInterest: null,
 				selectedPointOfInterestCategory: null
-			}
+			};
 		default:
 			return state;
 	}
