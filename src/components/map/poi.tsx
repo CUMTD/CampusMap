@@ -22,14 +22,10 @@ const Poi: FC = () => {
 	if (context.state.selectedPointOfInterest) {
 		const color = getColor(context.state.selectedPointOfInterestCategory?.name);
 		return (
-			<circle
+			<path
+				transform={`translate(${context.state.selectedPointOfInterest.x - 7},${context.state.selectedPointOfInterest.y - 25})`}
 				fill={color}
-				cx={context.state.selectedPointOfInterest.x}
-				cy={context.state.selectedPointOfInterest.y}
-				stroke={color}
-				strokeWidth={1}
-				fillOpacity={0.7}
-				r="4"
+				d="M7.5 25S15 13.114 15 6.617C15 2.965 11.639 0 7.5 0 3.361 0 0 2.965 0 6.617 0 14.718 7.5 25 7.5 25zm0-20a2.5 2.5 0 010 5 2.5 2.5 0 010-5z"
 			/>
 		);
 	}
