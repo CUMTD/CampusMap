@@ -155,6 +155,132 @@ export const PointsOfInterest: PointOfInterestCategory[] = [
 				x: 320,
 				y: 332,
 				routeNumbers: [10, 13, 22]
+			},
+			{
+				name: 'Digital Computer Lab',
+				x: 335,
+				y: 70,
+				routeNumbers: []
+			},
+			{
+				name: 'Electrical and Computer Engineering (ECE)',
+				x: 305,
+				y: 25,
+				routeNumbers: []
+			},
+			{
+				name: 'Education Building',
+				x: 275,
+				y: 335,
+				routeNumbers: [21]
+			},
+			{
+				name: 'English Building',
+				x: 310,
+				y: 230,
+				routeNumbers: [1, 43, 21, 22]
+			},
+			{
+				name: 'Everitt Laboratory',
+				x: 310,
+				y: 150,
+				routeNumbers: [1, 2, 12, 13, 21, 22]
+			},
+			{
+				name: 'Foellinger Auditorium',
+				x: 335,
+				y: 285,
+				routeNumbers: []
+			},
+			{
+				name: 'Grainger Engineering Library',
+				x: 335,
+				y: 85,
+				routeNumbers: []
+			},
+			{
+				name: 'Gregory Hall',
+				x: 310,
+				y: 275,
+				routeNumbers: [1, 13, 21, 22]
+			},
+			{
+				name: 'Henry Administration Building',
+				x: 310,
+				y: 205,
+				routeNumbers: [1, 2, 5, 12, 13, 21, 22]
+			},
+			{
+				name: 'Krannert Center for the Performing Arts',
+				x: 410,
+				y: 210,
+				routeNumbers: [2, 10, 13, 21, 22]
+			},
+			{
+				name: 'Law Building',
+				x: 225,
+				y: 400,
+				routeNumbers: [21]
+			},
+			{
+				name: 'Lincoln Hall',
+				x: 310,
+				y: 255,
+				routeNumbers: [1, 13, 21, 22]
+			},
+			{
+				name: 'Loomis Laboratory',
+				x: 415,
+				y: 155,
+				routeNumbers: [2, 10, 12, 13, 21, 22]
+			},
+			{
+				name: 'McKinley Health Center',
+				x: 465,
+				y: 340,
+				routeNumbers: [2, 22]
+			},
+			{
+				name: 'Memorial Stadium',
+				x: 150,
+				y: 470,
+				routeNumbers: [1, 10]
+			},
+			{
+				name: 'Mumford Hall',
+				x: 360,
+				y: 335,
+				routeNumbers: [10, 13, 22]
+			},
+			{
+				name: 'Noyes Laboratory',
+				x: 375,
+				y: 200,
+				routeNumbers: [2, 5, 10, 12, 13, 21, 22]
+			},
+			{
+				name: 'Siebel Center for Computer Science',
+				x: 370,
+				y: 70,
+				routeNumbers: [22]
+			},
+			{
+				name: 'State Farm Center',
+				x: 150,
+				y: 505,
+				routeNumbers: [1, 10]
+			},
+			{
+				name: 'Main Library',
+				x: 290,
+				y: 295,
+				routeNumbers: [1, 10, 13, 21, 22]
+			},
+			{
+				name: 'College of Veterinary Medicine (Vet-Med)',
+				x: 455.3,
+				y: 580.3,
+				routeNumbers: [21]
 			}
 		]
 	}
