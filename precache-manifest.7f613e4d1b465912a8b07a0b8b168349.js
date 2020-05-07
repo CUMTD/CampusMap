@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c376981b54d6f47006a73c26695dcdba",
+    "revision": "06635463dfceab39c10146f44e4b73fc",
     "url": "/CampusMap/index.html"
   },
   {
-    "revision": "58d1f71ddab41640a43c",
-    "url": "/CampusMap/static/css/main.2cd00df3.chunk.css"
+    "revision": "aa4bac0f060b2623b32a",
+    "url": "/CampusMap/static/css/main.13f0f2be.chunk.css"
   },
   {
     "revision": "63beec67308028c055fd",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CampusMap/static/js/2.5c7a6ff8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "58d1f71ddab41640a43c",
-    "url": "/CampusMap/static/js/main.5a12eb8b.chunk.js"
+    "revision": "aa4bac0f060b2623b32a",
+    "url": "/CampusMap/static/js/main.89a9363d.chunk.js"
   },
   {
     "revision": "ba2f3eed139b59457909",
