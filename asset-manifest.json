@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/CampusMap/static/css/main.ec3829de.chunk.css",
-    "main.js": "/CampusMap/static/js/main.6d057a1c.chunk.js",
-    "main.js.map": "/CampusMap/static/js/main.6d057a1c.chunk.js.map",
+    "main.js": "/CampusMap/static/js/main.21811775.chunk.js",
+    "main.js.map": "/CampusMap/static/js/main.21811775.chunk.js.map",
     "runtime-main.js": "/CampusMap/static/js/runtime-main.c79969cf.js",
     "runtime-main.js.map": "/CampusMap/static/js/runtime-main.c79969cf.js.map",
     "static/js/2.5c7a6ff8.chunk.js": "/CampusMap/static/js/2.5c7a6ff8.chunk.js",
     "static/js/2.5c7a6ff8.chunk.js.map": "/CampusMap/static/js/2.5c7a6ff8.chunk.js.map",
     "index.html": "/CampusMap/index.html",
-    "precache-manifest.53b90ecd4de564d8f9615a996d8ee3f4.js": "/CampusMap/precache-manifest.53b90ecd4de564d8f9615a996d8ee3f4.js",
+    "precache-manifest.2b20880c67db9ed5c0bc5d5e37025f70.js": "/CampusMap/precache-manifest.2b20880c67db9ed5c0bc5d5e37025f70.js",
     "service-worker.js": "/CampusMap/service-worker.js",
     "static/css/main.ec3829de.chunk.css.map": "/CampusMap/static/css/main.ec3829de.chunk.css.map",
     "static/js/2.5c7a6ff8.chunk.js.LICENSE.txt": "/CampusMap/static/js/2.5c7a6ff8.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c79969cf.js",
     "static/js/2.5c7a6ff8.chunk.js",
     "static/css/main.ec3829de.chunk.css",
-    "static/js/main.6d057a1c.chunk.js"
+    "static/js/main.21811775.chunk.js"
   ]
 }
